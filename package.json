@@ -1,0 +1,13 @@
+{
+  "name": "gridsome-googlesheet",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-source-google-sheets": "^0.4.1"
+  }
+}
