@@ -10,5 +10,8 @@
     "gridsome": "^0.7.0",
     "gridsome-source-google-sheets": "^0.4.1",
     "vuetify": "^2.4.9"
+  },
+  "devDependencies": {
+    "webpack-node-externals": "^2.5.2"
   }
 }
