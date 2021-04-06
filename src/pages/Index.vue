@@ -4,9 +4,12 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
-    <h1>Hello, world!</h1>
+    <h1>Hello UC Master Gardeners!</h1>
     <div v-for="page in $page.allGoogleSheet.edges" :key="page.id">
-      {{ page.node.Scientific_Name }}
+      <strong><em>{{ page.node.Scientific_Name }}</em></strong>
+      Commonly Known as: {{ page.node.Common_Name }}
+      Located at {{ page.node.Location}}
+
     </div>
 
   </Layout>

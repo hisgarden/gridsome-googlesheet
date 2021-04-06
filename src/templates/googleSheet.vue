@@ -2,7 +2,7 @@
   <layout>
       <h3>Test Route</h3>
     <div>{{ $page.googleSheet.Scientific_Name }}</div>
-    <div>{{ $page.googleSheet.Common_Name }}</div>
+    <!--<div>{{ $page.googleSheet.Common_Name }}</div>-->
   </layout>
 </template>
 
@@ -10,7 +10,6 @@
 query Sheet($path: String!) {
   googleSheet (path: $path) {
     Scientific_Name
-    Common_Name
   }
 }
 </page-query>
