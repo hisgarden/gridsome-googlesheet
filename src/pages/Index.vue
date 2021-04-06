@@ -5,18 +5,37 @@
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
     <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <div v-for="page in $page.allGoogleSheet.edges" :key="page.id">
+      {{ page.node.Scientific_Name }}
+    </div>
 
   </Layout>
 </template>
+
+<!-- Always put page-query between <template> and <script> -->
+<page-query>
+query {
+  allGoogleSheet {
+    edges {
+      node {
+        id
+        title
+        Scientific_Name
+        Common_Name
+        Description
+        Bloom_Season_
+        Water_Needs
+        Exposure
+        Pruning_Needs
+        Location
+        Size__width_
+        Size__height__
+        Type
+      }
+    }
+  } 
+}
+</page-query>
 
 <script>
 export default {
