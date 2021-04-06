@@ -1,3 +1,4 @@
+<script src="http://localhost:8098"></script>
 <template>
   <Layout>
 
@@ -7,8 +8,8 @@
     <h1>Hello UC Master Gardeners!</h1>
     <div v-for="page in $page.allGoogleSheet.edges" :key="page.id">
       <strong><em>{{ page.node.Scientific_Name }}</em></strong>
-      Commonly Known as: {{ page.node.Common_Name }}
-      Located at {{ page.node.Location}}
+      <!--Commonly Known as: {{ page.node.Common_Name }}-->
+      located at {{ page.node.Location}}
 
     </div>
 
