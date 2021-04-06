@@ -1,15 +1,26 @@
 <template>
   <layout>
-    <div>{{$page.googleSheet.title}}</div>
-    <div>{{$page.googleSheet.body}}</div>
+      <h3>Test Route</h3>
+    <div>{{ $page.googleSheet.Scientific_Name }}</div>
+    <div>{{ $page.googleSheet.Common_Name }}</div>
   </layout>
 </template>
 
 <page-query>
-query Post ($path: String!) {
+query Sheet($path: String!) {
   googleSheet (path: $path) {
-    title
-    body
+    Scientific_Name
+    Common_Name
   }
 }
 </page-query>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+    setup() {
+        
+    },
+})
+</script>

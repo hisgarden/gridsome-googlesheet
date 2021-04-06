@@ -11,7 +11,8 @@ module.exports = {
       use: 'gridsome-source-google-sheets',
       options: {
         sheetId: "1K93kOfQSgRlzk8WQGr9D1MMI2w0Fs2E1yZpKffMIuG4", //'GOOGLE_SHEET_ID', 
-        apiKey: "AIzaSyAwj4oqgFma6qv_PG2d3wgUYu8na7Iau0Q", //'GOOGLE_API_KEY',
+        apiKey: "AIzaSyDlt3rs9wo4clM7yrbkqx_azo0JMibvazk", //'GOOGLE_API_KEY',
+        route: "/:id", //optional, omit if not using routes
         // type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.
       },
     },
