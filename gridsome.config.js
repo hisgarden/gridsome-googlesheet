@@ -10,9 +10,9 @@ module.exports = {
     {
       use: 'gridsome-source-google-sheets',
       options: {
-        sheetId: "GOOGLE_SHEET_ID", //'GOOGLE_SHEET_ID', 
-        apiKey: "GOOGLE_API_KEY", //'GOOGLE_API_KEY',
-        route: "/:id", //optional, omit if not using routes
+        sheetId: process.env.GOOGLE_SHEET_ID, //'GOOGLE_SHEET_ID', 
+        apiKey: process.env.GOOGLE_API_KEY, //'GOOGLE_API_KEY',
+        //route: "/:id", //optional, omit if not using routes
         // type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.
       },
     },
