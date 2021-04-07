@@ -4294,6 +4294,13 @@ graphql@^14.4.2:
   dependencies:
     iterall "^1.2.2"
 
+gridsome-source-google-sheets-v2@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gridsome-source-google-sheets-v2/-/gridsome-source-google-sheets-v2-1.0.4.tgz#165ea20d96d59ed2a638d2f66d3f33e637b817f8"
+  integrity sha512-ybjEHHJ373iCR/NPX8+Diav3PdVwB1QSZXSyqkO1de7WQjWxXf884wlHS/DeXk2ZCGqcEZVEyS93F3kORJeeqQ==
+  dependencies:
+    googleapis "^40.0.0"
+
 gridsome-source-google-sheets@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/gridsome-source-google-sheets/-/gridsome-source-google-sheets-0.4.1.tgz#6688e765bfe95e0e391eaffa0c2c11e1ca3e8dd3"
