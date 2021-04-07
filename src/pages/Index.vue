@@ -5,7 +5,7 @@
       <v-container>
         <v-row>
    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <g-image alt="Plant Signage Prototype" src="~/PlantTag-Prototype.png" width="300" />
         </v-row>
       </v-container>
     </section>
