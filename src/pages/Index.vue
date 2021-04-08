@@ -1,14 +1,6 @@
 <template>
   <Layout>
-
-    <section>
-      <v-container>
-        <v-row>
-   <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Plant Signage Prototype" src="~/PlantTag-Prototype.png" width="300" />
-        </v-row>
-      </v-container>
-    </section>
+    <About />
  
 
 
@@ -17,7 +9,7 @@
     <div v-for="page in $page.allGoogleSheet.edges" :key="page.id">
       <strong><em>{{ page.node.Scientific_Name }}</em></strong>
       -- Commonly Known as: {{ page.node.Common_Name }}
-      located at {{ page.node.Location}}
+      located at: {{ page.node.Location}}
 
     </div>
 
@@ -49,9 +41,15 @@ query {
 </page-query>
 
 <script>
+import About from "@/components/About.vue"
+
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Hello, UC Master Gardeners!'
+  },
+  components: {
+    About
+    //Contact
   }
 }
 </script>
