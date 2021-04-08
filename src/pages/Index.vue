@@ -1,17 +1,8 @@
 <template>
   <Layout>
     <About />
- 
+    <Plant />
 
-
-
-    <h1>Hello UC Master Gardeners!</h1>
-    <div v-for="page in $page.allGoogleSheet.edges" :key="page.id">
-      <strong><em>{{ page.node.Scientific_Name }}</em></strong>
-      -- Commonly Known as: {{ page.node.Common_Name }}
-      located at: {{ page.node.Location}}
-
-    </div>
 
   </Layout>
 </template>
@@ -42,14 +33,15 @@ query {
 
 <script>
 import About from "@/components/About.vue"
+import Plant from "@/components/Plant.vue"
 
 export default {
   metaInfo: {
     title: 'Hello, UC Master Gardeners!'
   },
   components: {
-    About
-    //Contact
+    About,
+    Plant
   }
 }
 </script>
