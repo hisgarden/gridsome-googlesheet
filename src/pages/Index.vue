@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <About />
     <Plant />
 
 
@@ -32,16 +31,16 @@ query {
 </page-query>
 
 <script>
-import About from "@/components/About.vue"
 import Plant from "@/components/Plant.vue"
+//import Card from "@/components/Card.vue"
 
 export default {
   metaInfo: {
     title: 'Hello, UC Master Gardeners!'
   },
   components: {
-    About,
     Plant
+    //Card
   }
 }
 </script>
