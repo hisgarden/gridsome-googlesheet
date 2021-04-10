@@ -10,7 +10,7 @@
     <div>Water Needs: {{ $page.googleSheet.Water_Needs }}</div>
     <div>Bloom Season: {{ $page.googleSheet.Bloom_Season }}</div>
     <div>Pruning Needs: {{ $page.googleSheet.Pruning_Needs }}</div>
-    <div>Location: {{ $page.googleSheet.Location }}</div>
+    <div>Location: {{ $page.googleSheet.Location }}-{{ $page.googleSheet.id }}</div>
     <div>Plant Type: {{ $page.googleSheet.Type }}</div>
 
   </Layout>
@@ -19,6 +19,7 @@
 <page-query>
 query Sheet($path: String!) {
   googleSheet (path: $path) {
+    id
     Scientific_Name
     Common_Name
     Description
