@@ -4,6 +4,7 @@
     <Plant />
 
 
+
   </Layout>
 </template>
 
@@ -34,6 +35,7 @@ query {
 <script>
 import About from "@/components/About.vue"
 import Plant from "@/components/Plant.vue"
+//import Card from "@/components/Card.vue"
 
 export default {
   metaInfo: {
@@ -41,7 +43,8 @@ export default {
   },
   components: {
     About,
-    Plant
+    Plant,
+    //Card
   }
 }
 </script>
