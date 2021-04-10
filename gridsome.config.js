@@ -9,11 +9,25 @@ module.exports = {
   siteDescription: "Outstanding Plants of Alameda County",
   plugins: [
     {
-      use: 'gridsome-source-google-sheets',
+      use: 'gridsome-source-google-sheets-v2',
       options: {
-        sheetId: process.env.GOOGLE_SHEET_ID, //'GOOGLE_SHEET_ID', 
+        //sheetId: process.env.GOOGLE_SHEET_ID, //'GOOGLE_SHEET_ID', 
         apiKey: process.env.GOOGLE_API_KEY, //'GOOGLE_API_KEY',
-        // type: 'TYPE_NAME', //Optional - default is googleSheet. Used for graphql queries.
+        spreadsheets: [
+          {
+            spreadsheetId: process.env.GOOGLE_SHEET_ID,
+            sheets: [
+              {
+                sheetName: "QL_Plants", // Example: "Sheet1"
+                collectionName: "googleSheet", // Example: "Projects" (Must be unique)
+              },
+              //{
+              //  sheetName: 'Natives', // Example: "Sheet2"
+              //  collectionName: "googleSheet", // Example: "Users" (Must be Unique)
+              //},
+            ],
+          },
+        ],
       },
     },
   ],
