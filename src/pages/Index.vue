@@ -1,8 +1,6 @@
 <template>
   <Layout>
-    <About />
     <Plant />
-
 
 
   </Layout>
@@ -33,7 +31,6 @@ query {
 </page-query>
 
 <script>
-import About from "@/components/About.vue"
 import Plant from "@/components/Plant.vue"
 //import Card from "@/components/Card.vue"
 
@@ -42,8 +39,7 @@ export default {
     title: 'Hello, UC Master Gardeners!'
   },
   components: {
-    About,
-    Plant,
+    Plant
     //Card
   }
 }
