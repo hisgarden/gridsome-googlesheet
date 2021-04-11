@@ -82,7 +82,7 @@ Open your browser and type in:
 
 This starter is based on:
 
-[Gridsome starter based on the Casper theme for Ghost](https://github.com/jammeryhq/gridsome-starter-casper-v3)
+[Gridsome Headless CMS Tutorial With Google Sheets](https://www.youtube.com/watch?v=-i6C9GE0oTA)
 
 
 Happy coding 🎉🙌

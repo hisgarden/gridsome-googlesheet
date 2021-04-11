@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="plant-section">
+  <section id="plant" class="plant-section">
     <v-container>
       <v-row>
         <v-col>
