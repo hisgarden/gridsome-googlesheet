@@ -27,9 +27,9 @@
             <v-icon>mdi-contact</v-icon>
             About
           </v-btn>
-          <v-btn to="cart" text>
-            <v-icon>mdi-cart</v-icon>
-            Cart
+          <v-btn to="/___explore/" text>
+            <v-icon>mdi-magnify</v-icon>
+            Explore
           </v-btn>
         </v-toolbar-items>
       </v-app-bar>
@@ -115,7 +115,7 @@ export default {
       items: [
         { title: 'Home', link: '/', icon: 'home' },
         { title: 'About', link: 'about', icon: 'about' },
-        { title: 'Cart', link: 'cart', icon: 'cart' }
+        { title: 'Explore', link: 'explore', icon: 'explore' }
       ]
     }
   }
