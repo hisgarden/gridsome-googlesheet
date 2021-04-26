@@ -30,6 +30,18 @@ module.exports = {
         ],
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "articles/**/*.md",
+        typeName: "Article",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    }
   ],
   templates: {
     googleSheet: [
@@ -38,5 +50,10 @@ module.exports = {
         component:"./src/templates/googleSheet.vue"
       }
     ]
+  },
+  transformers: {
+    remark: {
+      plugins: ["@gridsome/remark-prismjs"]
+    }
   }
 }
