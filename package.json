@@ -7,6 +7,8 @@
     "build": "gridsome build"
   },
   "dependencies": {
+    "@gridsome/remark-prismjs": "^0.2.0",
+    "chokidar": "^3.5.1",
     "dotenv": "^8.2.0",
     "dotenv-safe": "^8.2.0",
     "gridsome": "^0.7.0",
@@ -15,6 +17,8 @@
     "vuetify": "^2.4.9"
   },
   "devDependencies": {
+    "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.3.3",
     "webpack-node-externals": "^2.5.2"
   }
 }
