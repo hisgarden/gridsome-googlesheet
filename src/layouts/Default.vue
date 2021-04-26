@@ -3,7 +3,7 @@
     
     <Header />
     <Hero v-if="isHome" />
-    <v-container fill-width class="d-sm-none d-md-flex">
+    <v-container fill-height class="d-sm-none d-md-flex">
       <slot />
     </v-container>
     <v-main>
@@ -39,18 +39,10 @@ export default {
   data() {
     return {
       drawer: false,
-      links: [
-        'Home',
-        'About Us',
-        'Team',
-        'Services',
-        'Blog',
-        'Contact Us',
-      ],
       items: [
         { title: 'Home', link: '/', icon: 'home' },
         { title: 'About', link: 'about', icon: 'about' },
-        { title: 'Explore', link: 'explore', icon: 'explore' }
+        { title: 'Articles', link: 'articles', icon: 'articles' }
       ]
     }
   }
