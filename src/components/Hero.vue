@@ -1,15 +1,16 @@
 <template>
-  <v-parallax dark :src="heroData.hero.heroImgSrc">
+  <v-container>
     <v-row align="center" justify="center">
+      <v-img :src="heroData.hero.heroImgSrc"></v-img>
       <v-col/>
       <v-col>
-        <h1 class="display-2 font-weight-thin mb-4 text-center">{{heroData.hero.heroTitle}}</h1>
+        <h1 class="display-1 font-weight-thin mb-1 text-center">{{heroData.hero.heroTitle}}</h1>
         <br />
         <h4 class="subheading text-center">{{heroData.hero.heroSubtitle}}</h4>
       </v-col>
       <v-col/>
     </v-row>
-  </v-parallax>
+  </v-container>
 </template>
 
 <script>
