@@ -11,7 +11,7 @@
         @click="toggle"
       ></v-app-bar-nav-icon>
       <v-btn text large href="/">
-        <g-image src="/static/favicon.ico" height="32" width="32" class="mr-5" />
+        <g-image src="/favicon.svg" height="32" width="32" fit="contain" />
         <span class="headline font-weight-bold">{{
           $static.metadata.siteName
         }}</span>
@@ -19,13 +19,19 @@
 
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon>fa-search</v-icon>
+        <v-icon>mdi-search</v-icon>
       </v-btn>
       <v-toolbar-items class="d-none d-sm-flex">
-        <v-btn text to="/">Home</v-btn>
+        <v-btn to="/" text>
+          <v-icon>mdi-home</v-icon>
+          Home
+        </v-btn>
         <v-btn text to="/about">About</v-btn>
         <v-btn text to="/articles">Articles</v-btn>
-        <v-btn text to="/contact">Contact</v-btn>
+        <v-btn to="/contact" text>
+          <v-icon>mdi-contact-mail</v-icon>
+          Contact
+        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-navigation-drawer
@@ -36,7 +42,7 @@
     >
       <v-list-item>
         <v-list-item-avatar>
-          <g-image src="~/favicon.png"></g-image>
+          <g-image src="/favicon.svg" height="32" width="32" fit="contain"></g-image>
         </v-list-item-avatar>
 
         <v-btn icon @click.stop="mini = !mini">
@@ -80,10 +86,10 @@ export default {
     return {
       collapse: false,
       items: [
-        { title: "Home", icon: "fa-home", path: "/" },
+        { title: "Home", icon: "mdi-home", path: "/" },
         { title: "About", icon: "fa-user-astronaut", path: "/about" },
         { title: "Articles", icon: "fa-newspaper", path: "/articles" },
-        { title: "Contact", icon: "fa-envelope", path: "/contact" }
+        { title: "Contact", icon: "mdi-contact-mail", path: "/contact" }
       ],
       mini: false
     };

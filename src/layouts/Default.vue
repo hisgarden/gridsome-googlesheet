@@ -2,6 +2,10 @@
   <v-app>
     
     <Header />
+    <Hero v-if="isHome" />
+    <v-container fill-height class="d-sm-none d-md-flex">
+      <slot />
+    </v-container>
     <v-main>
       <slot/>
     </v-main>
