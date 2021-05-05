@@ -17,7 +17,7 @@
             shaped
           >
 
-            <div class="d-flex flex-no-wrap justify-space-between">
+            <div class="d-flex justify-space-between">
                 
                 <v-avatar
                     class="ma-3"
@@ -45,7 +45,8 @@
                   color="success"
                   outlined
                 >
-                  <v-icon>mdi-magnify</v-icon>Learn more
+                  <v-icon>mdi-magnify</v-icon>
+                  <g-link to="/plant/0/">Learn more</g-link>
                 </v-btn>  
                 <v-spacer></v-spacer>
   
