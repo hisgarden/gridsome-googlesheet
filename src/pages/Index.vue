@@ -32,7 +32,7 @@ query {
 
 <script>
 import Plant from "@/components/Plant.vue"
-import AllPlants from '@/components/Plant.vue'
+import AllPlants from '@/components/AllPlants.vue'
 //import Card from "@/components/Card.vue"
 
 export default {

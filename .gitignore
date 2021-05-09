@@ -4,6 +4,7 @@ src/.temp
 *.log
 .cache
 dist/*
+.saber
 
 /tests/e2e/reports/
 selenium-debug.log
