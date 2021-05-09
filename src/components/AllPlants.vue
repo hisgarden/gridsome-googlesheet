@@ -4,7 +4,7 @@
 
       <v-row dense>
         <v-col>
-          <g-image alt="Prototype image" src="~/Arctostaphylos_Sunset-SunsetManzanita.png" width="300" />
+          <g-image alt="Prototype image" src="~/Arctostaphylos_Sunset-SunsetManzanita.png" width="194" />
         </v-col>
         <v-col sm="6" >
           <div v-for="page in $page.allGoogleSheet.edges" :key="page.node.Scientific_Name">
@@ -24,7 +24,7 @@
                     size="194"
                     tile
                 >
-                  <v-img src="https://cdn.vuetifyjs.com/images/cards/foster.jpg" alt="page.node.Scientific_Name"></v-img>
+                  <v-img src="https://cdn.vuetifyjs.com/images/cards/foster.jpg" :alt="page.node.Scientific_Name"></v-img>
                 </v-avatar>
                 
                 
@@ -54,13 +54,13 @@
                   <v-icon>mdi-heart</v-icon>
                 </v-btn>
   
-                <v-btn icon>
+<!--                 <v-btn icon>
                   <v-icon>mdi-bookmark</v-icon>
-                </v-btn>
+                </v-btn> -->
   
-                <v-btn icon>
+<!--                 <v-btn icon>
                   <v-icon>mdi-share-variant</v-icon>
-                </v-btn>
+                </v-btn> -->
               </v-card-actions>
 
       
@@ -72,8 +72,3 @@
   </section>
 </template>
 
-<style scoped>
-.g-image {
-  border-radius: 100%;
-}
-</style>
