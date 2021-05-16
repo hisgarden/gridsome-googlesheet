@@ -8,8 +8,8 @@
               <g-image alt="Prototype image" src="~/Arctostaphylos_Sunset-SunsetManzanita.png" width="300" />
             </v-col>
             <v-col sm="6" class="d-flex flex-column justify-center">
-              <h3>{{ $page.googleSheet.Scientific_Name }}</h3>
-              <div>Common Name: {{ $page.googleSheet.Common_Name }}</div>
+              <h3>{{ $page.googleSheet.Common_Name }}</h3>
+              <div>({{ $page.googleSheet.Scientific_Name }})</div>
               <div>Description: {{ $page.googleSheet.Description }}</div>
               <div>Height: {{ $page.googleSheet.Size_height }}</div>
               <div>Width: {{ $page.googleSheet.Size_width }}</div>

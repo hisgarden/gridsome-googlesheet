@@ -36,7 +36,7 @@
                 <v-card-subtitle>({{ page.node.Scientific_Name }})</v-card-subtitle>
                <v-card-text>
                   {{ page.node.Description }}<br>
-                  Located at: {{ page.node.Location}}
+                  Located at: {{ page.node.Location}}-{{ page.node.id }}
               </v-card-text>
              
               <v-card-actions>
@@ -46,7 +46,7 @@
                   outlined
                 >
                   <v-icon>mdi-magnify</v-icon>
-                  <g-link to="/plant/0/">Learn more</g-link>
+                  <g-link :to="page.node.id">Learn more</g-link>
                 </v-btn>  
                 <v-spacer></v-spacer>
   
