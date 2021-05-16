@@ -46,7 +46,7 @@ module.exports = {
   templates: {
     googleSheet: [
       {
-        path: "/plant/:id",
+        path: "/:id",
         component:"./src/templates/googleSheet.vue"
       }
     ]
