@@ -11,7 +11,9 @@
         @click="toggle"
       ></v-app-bar-nav-icon>
       <v-btn text large href="/">
-        <!-- <g-image src="/favicon.svg" height="32" width="32" fit="contain" /> -->
+        <v-list-item-avatar>
+          <g-image src="/favicon.svg" height="32" width="32" fit="contain"></g-image>
+        </v-list-item-avatar>
         <span class="headline font-weight-bold">{{
           $static.metadata.siteName
         }}</span>
@@ -31,7 +33,7 @@
           <v-icon>mdi-information-outline</v-icon>
           About</v-btn>
         <!-- <v-btn text to="/articles">Articles</v-btn> -->
-        <v-btn to="/contact" text>
+        <v-btn to="/about" text>
           <v-icon>mdi-contacts</v-icon>
           Contact
         </v-btn>
@@ -91,9 +93,9 @@ export default {
       collapse: false,
       items: [
         { title: "Home", icon: "mdi-home", path: "/" },
-        { title: "About", icon: "fa-user-astronaut", path: "/about" },
-        { title: "Articles", icon: "fa-newspaper", path: "/articles" },
-        { title: "Contact", icon: "mdi-contact-mail", path: "/contact" }
+        { title: "About", icon: "mdi-information-outline", path: "/about" },
+        // { title: "Articles", icon: "fa-newspaper", path: "/articles" },
+        { title: "Contact", icon: "mdi-contacts", path: "/about" }
       ],
       mini: false
     };
