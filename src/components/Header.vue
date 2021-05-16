@@ -11,29 +11,33 @@
         @click="toggle"
       ></v-app-bar-nav-icon>
       <v-btn text large href="/">
-        <g-image src="/favicon.svg" height="32" width="32" fit="contain" />
+        <!-- <g-image src="/favicon.svg" height="32" width="32" fit="contain" /> -->
         <span class="headline font-weight-bold">{{
           $static.metadata.siteName
         }}</span>
       </v-btn>
 
       <v-spacer></v-spacer>
-      <v-btn icon>
+<!--       <v-btn icon>
         <v-icon>mdi-search</v-icon>
-      </v-btn>
+        Search
+      </v-btn> -->
       <v-toolbar-items class="d-none d-sm-flex">
         <v-btn to="/" text>
           <v-icon>mdi-home</v-icon>
           Home
         </v-btn>
-        <v-btn text to="/about">About</v-btn>
-        <v-btn text to="/articles">Articles</v-btn>
+        <v-btn text to="/about">
+          <v-icon>mdi-information-outline</v-icon>
+          About</v-btn>
+        <!-- <v-btn text to="/articles">Articles</v-btn> -->
         <v-btn to="/contact" text>
-          <v-icon>mdi-contact-mail</v-icon>
+          <v-icon>mdi-contacts</v-icon>
           Contact
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+
     <v-navigation-drawer
       absolute
       v-model="collapse"
