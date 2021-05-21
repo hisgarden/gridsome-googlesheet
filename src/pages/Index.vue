@@ -1,8 +1,6 @@
 <template>
   <Layout>
     <AllPlants />
-
-
   </Layout>
 </template>
 
@@ -24,26 +22,28 @@ query {
         Size_width
         Size_height
         Type
+        Image_URL
+        Info_Site
       }
     }
-  } 
+  }
 }
 </page-query>
 
 <script>
-import Plant from "@/components/Plant.vue"
+import Plant from '@/components/Plant.vue'
 import AllPlants from '@/components/AllPlants.vue'
 //import Card from "@/components/Card.vue"
 
 export default {
   metaInfo: {
-    title: 'Hello, UC Master Gardeners!'
+    title: 'Hello, UC Master Gardeners!',
   },
   components: {
     AllPlants,
-    Plant
+    Plant,
     //Card
-  }
+  },
 }
 </script>
 

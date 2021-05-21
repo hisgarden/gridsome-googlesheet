@@ -1,13 +1,11 @@
 <template>
   <v-app>
-    
     <Header />
     <Hero v-if="isHome" />
     <v-container fill-height class="d-sm-none d-md-flex">
       <slot />
     </v-container>
-    <v-main>
-    </v-main>
+    <v-main> </v-main>
     <Footer />
   </v-app>
 </template>
@@ -21,9 +19,9 @@ query {
 </static-query>
 
 <script>
-import Header from "../components/Header"
-import Hero from "../components/Hero"
-import Footer from "../components/Footer"
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Footer from '../components/Footer'
 
 export default {
   components: {
@@ -33,7 +31,7 @@ export default {
   },
   computed: {
     isHome() {
-      return this.$route.path === "/"
+      return this.$route.path === '/'
     },
   },
   data() {
@@ -42,11 +40,9 @@ export default {
       items: [
         { title: 'Home', link: '/', icon: 'home' },
         { title: 'About', link: 'about', icon: 'about' },
-        { title: 'Articles', link: 'articles', icon: 'articles' }
-      ]
+        { title: 'Articles', link: 'articles', icon: 'articles' },
+      ],
     }
-  }
-
+  },
 }
-
 </script>

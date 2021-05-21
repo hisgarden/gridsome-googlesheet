@@ -12,7 +12,12 @@
       ></v-app-bar-nav-icon>
       <v-btn text large href="/">
         <v-list-item-avatar>
-          <g-image src="/favicon.svg" height="32" width="32" fit="contain"></g-image>
+          <g-image
+            src="/favicon.svg"
+            height="32"
+            width="32"
+            fit="contain"
+          ></g-image>
         </v-list-item-avatar>
         <span class="headline font-weight-bold">{{
           $static.metadata.siteName
@@ -20,7 +25,7 @@
       </v-btn>
 
       <v-spacer></v-spacer>
-<!--       <v-btn icon>
+      <!--       <v-btn icon>
         <v-icon>mdi-search</v-icon>
         Search
       </v-btn> -->
@@ -31,7 +36,8 @@
         </v-btn>
         <v-btn text to="/about">
           <v-icon>mdi-information-outline</v-icon>
-          About</v-btn>
+          About</v-btn
+        >
         <!-- <v-btn text to="/articles">Articles</v-btn> -->
         <v-btn to="/about" text>
           <v-icon>mdi-contacts</v-icon>
@@ -48,7 +54,12 @@
     >
       <v-list-item>
         <v-list-item-avatar>
-          <g-image src="/favicon.svg" height="32" width="32" fit="contain"></g-image>
+          <g-image
+            src="/favicon.svg"
+            height="32"
+            width="32"
+            fit="contain"
+          ></g-image>
         </v-list-item-avatar>
 
         <v-btn icon @click.stop="mini = !mini">
@@ -92,18 +103,18 @@ export default {
     return {
       collapse: false,
       items: [
-        { title: "Home", icon: "mdi-home", path: "/" },
-        { title: "About", icon: "mdi-information-outline", path: "/about" },
+        { title: 'Home', icon: 'mdi-home', path: '/' },
+        { title: 'About', icon: 'mdi-information-outline', path: '/about' },
         // { title: "Articles", icon: "fa-newspaper", path: "/articles" },
-        { title: "Contact", icon: "mdi-contacts", path: "/about" }
+        { title: 'Contact', icon: 'mdi-contacts', path: '/about' },
       ],
-      mini: false
-    };
+      mini: false,
+    }
   },
   methods: {
     toggle() {
-      this.collapse = !this.collapse;
-    }
-  }
-};
+      this.collapse = !this.collapse
+    },
+  },
+}
 </script>

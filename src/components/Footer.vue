@@ -7,7 +7,8 @@
       width="100%"
     >
       <v-card-text class="white--text">
-        &copy; {{ new Date().getFullYear() }} — <strong>Regents of the University of California</strong>
+        &copy; {{ new Date().getFullYear() }} —
+        <strong>Regents of the University of California</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -18,11 +19,11 @@ export default {
   components: {},
   data: () => ({
     icons: [
-      "fab fa-facebook",
-      "fab fa-twitter",
-      "fab fa-linkedin",
-      "fab fa-instagram"
-    ]
-  })
-};
+      'fab fa-facebook',
+      'fab fa-twitter',
+      'fab fa-linkedin',
+      'fab fa-instagram',
+    ],
+  }),
+}
 </script>

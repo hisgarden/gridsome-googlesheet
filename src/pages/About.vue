@@ -1,18 +1,18 @@
 <template>
   <Layout>
-    <about/>
+    <about />
   </Layout>
 </template>
 
 <script>
-import About from "@/components/About.vue"
+import About from '@/components/About.vue'
 
 export default {
   metaInfo: {
-    title: 'Hello, UC Master Gardeners!'
+    title: 'Hello, UC Master Gardeners!',
   },
   components: {
-    About
-  }
+    About,
+  },
 }
 </script>

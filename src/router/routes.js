@@ -9,5 +9,5 @@ export default [
   { path: '/store', name: 'store', component: Store },
   { path: '/cart', name: 'cart', component: Cart },
   { path: '/checkout', name: 'checkout', component: Checkout },
-  { path: '/thank-you', name: 'thankyou', component: ThankYou }
+  { path: '/thank-you', name: 'thankyou', component: ThankYou },
 ]
