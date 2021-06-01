@@ -4,12 +4,8 @@
       <v-container>
         <v-row>
           <v-col sm="6" class="d-flex flex-column justify-center">
-            <div>Image_URL: {{ $page.googleSheet.Image_URL }} </div>
-            <g-image
-              alt="Prototype image"
-              src="~/Arctostaphylos_Sunset-SunsetManzanita.png"
-              width="300"
-            />
+            <div>Image_URL: {{ $page.googleSheet.Image_URL }}</div>
+            <v-img src="https://picsum.photos/300" alt="Plant Image"/>
             <h3>{{ $page.googleSheet.Common_Name }}</h3>
             <div>({{ $page.googleSheet.Scientific_Name }})</div>
             <div>Description: {{ $page.googleSheet.Description }}</div>
@@ -24,7 +20,7 @@
                 $page.googleSheet.id
               }}
             </div>
-            <div>Image_URL: {{ $page.googleSheet.Image_URL }} </div>
+            <div>Image_URL: {{ $page.googleSheet.Image_URL }}</div>
             <div>Plant Type: {{ $page.googleSheet.Type }}</div>
           </v-col>
         </v-row>

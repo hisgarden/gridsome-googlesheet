@@ -32,8 +32,10 @@
               >
               <v-card-text>
                 {{ page.node.Description }}<br />
-                Located at: {{ page.node.Location }}-{{ page.node.id }}
-                Image_URL: {{ page.node.Image_URL }}<br>
+                Located at: {{ page.node.Location }}-{{
+                  page.node.id
+                }}
+                Image_URL: {{ page.node.Image_URL }}<br />
                 <g-link :to="page.node.Image_URL">Image_URL</g-link>
               </v-card-text>
 
