@@ -23,7 +23,7 @@ query {
         Size_height
         Type
         Image_URL
-        Info_Site
+        Img_Path
       }
     }
   }
