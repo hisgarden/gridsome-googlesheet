@@ -36,7 +36,7 @@ module.exports = {
         typeName: 'googleSheet',
         sourceField: 'Image_URL',
         targetField: 'imageDownloaded',
-        targetPath: 'src/assets/img',
+        targetPath: '/src/assets/remoteImages',
       },
     },
     {

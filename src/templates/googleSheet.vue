@@ -45,6 +45,7 @@ query Sheet($path: String!) {
     Bloom_Season
     Pruning_Needs
     Image_URL
+    imageDownloaded
   }
 }
 </page-query>

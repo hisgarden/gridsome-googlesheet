@@ -21,6 +21,7 @@
                     src="~/assets/img/lomandra-hystrix-katie-belles.199.jpg"
                     :alt="page.node.Scientific_Name"
                   ></g-image>
+                 
                 </v-avatar>
 
                 icon_native, icon_bee, icon_water_need, icon_exposure
@@ -36,7 +37,8 @@
                   page.node.id
                 }}
                 Image_URL: {{ page.node.Image_URL }}<br />
-                <g-link :to="page.node.Image_URL">Image_URL</g-link>
+                <g-link :to="page.node.Image_URL">Image_URL</g-link><br>
+                <img src="$page.node.imageDownloaded"/>
               </v-card-text>
 
               <v-card-actions>

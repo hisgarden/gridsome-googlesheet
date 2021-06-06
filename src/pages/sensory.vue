@@ -7,7 +7,7 @@
 <!-- Always put page-query between <template> and <script> -->
 <page-query>
 query {
-  allGoogleSheet {
+  allGoogleSheet (filter: { Location: { in: ["Sensory"] }}){
     edges {
       node {
         id
