@@ -105,6 +105,13 @@ export default {
       items: [
         { title: 'Home', icon: 'mdi-home', path: '/' },
         { title: 'About', icon: 'mdi-information-outline', path: '/about' },
+        { title: 'Outstanding Plants of Alameda County', icon: 'mdi-flower-outline', path: '/opac' },
+        { title: 'Native Plants', icon: 'mdi-flower-outline', path: '/Natives' },
+        { title: 'Mediterranean Plants', icon: 'mdi-flower-outline', path: '/Mediterranean' },
+        { title: 'Grasses Plants', icon: 'mdi-flower-outline', path: '/Grasses' },
+        { title: 'Sensory Plants', icon: 'mdi-flower-outline', path: '/Sensory' },
+
+
         // { title: "Articles", icon: "fa-newspaper", path: "/articles" },
         { title: 'Contact', icon: 'mdi-contacts', path: '/about' },
       ],
