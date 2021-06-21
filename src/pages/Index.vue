@@ -10,7 +10,7 @@ query {
   allGoogleSheet {
     edges {
       node {
-        id
+        ID
         Scientific_Name
         Common_Name
         Description
@@ -19,12 +19,10 @@ query {
         Exposure
         Pruning_Needs
         Location
-        Size_width
         Size_height
+        Size_width
         Type
-        Image_URL
-        Img_Path
-        imageDownloaded
+        Img_URL
       }
     }
   }

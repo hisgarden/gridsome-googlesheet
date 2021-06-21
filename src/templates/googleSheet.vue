@@ -2,12 +2,29 @@
   <Layout>
     <section id="plant" class="plant-section">
       <v-container>
-        <v-row>
+        <g-image :src="$page.googleSheet.Img_URL" /> 
+          <h3>{{$page.googleSheet.Common_Name}}</h3>
+          <div>Scientific Name - {{$page.googleSheet.Scientific_Name}}</div>
+          <div>Description - {{$page.googleSheet.Description}}</div>
+          <div>Size(height) - {{$page.googleSheet.Size__height__}}</div>
+          <div>Size(width) - {{$page.googleSheet.Size__width_}}</div>
+          <div>Bloom Season - {{$page.googleSheet.Bloom_Season}}</div>
+          <div>Pruning Needs - {{$page.googleSheet.Pruning_Needs}}</div>
+          <div>Water Needs - {{$page.googleSheet.Water_Needs}}</div>
+          <div>Exposure - {{$page.googleSheet.Exposure}}</div>
+          <div>Type - {{$page.googleSheet.Type}}</div>
+          <div>Location - {{$page.googleSheet.Location}}</div>
+          <div>ID Number - {{$page.googleSheet.ID}}</div>
+          <div>Img URL - {{$page.googleSheet.Img_URL}}</div>
+<!--         <v-row>
           <v-col sm="6" class="d-flex flex-column justify-center">
-            <div>Image_URL: {{ $page.googleSheet.Image_URL }}</div>
+            <g-image :src="$page.googleSheet.Img_URL" /> 
+            <div>Img_URL: {{ $page.googleSheet.Img_URL }}</div>
+            <g-image :src="$page.googleSheet.Img_URL" />
             <v-img src="https://picsum.photos/300" alt="Plant Image"/>
             <h3>{{ $page.googleSheet.Common_Name }}</h3>
             <div>({{ $page.googleSheet.Scientific_Name }})</div>
+            <div>Img_URL: {{ $page.googleSheet.Img_URL }}</div>
             <div>Description: {{ $page.googleSheet.Description }}</div>
             <div>Height: {{ $page.googleSheet.Size_height }}</div>
             <div>Width: {{ $page.googleSheet.Size_width }}</div>
@@ -15,15 +32,10 @@
             <div>Water Needs: {{ $page.googleSheet.Water_Needs }}</div>
             <div>Bloom Season: {{ $page.googleSheet.Bloom_Season }}</div>
             <div>Pruning Needs: {{ $page.googleSheet.Pruning_Needs }}</div>
-            <div>
-              Location: {{ $page.googleSheet.Location }}-{{
-                $page.googleSheet.id
-              }}
-            </div>
-            <div>Image_URL: {{ $page.googleSheet.Image_URL }}</div>
+            <div>Location: {{ $page.googleSheet.Location }}-{{$page.googleSheet.id}}</div>
             <div>Plant Type: {{ $page.googleSheet.Type }}</div>
           </v-col>
-        </v-row>
+        </v-row> -->
       </v-container>
     </section>
   </Layout>
@@ -32,7 +44,7 @@
 <page-query>
 query Sheet($path: String!) {
   googleSheet(path: $path) {
-    id
+    ID
     Scientific_Name
     Common_Name
     Description
@@ -44,8 +56,7 @@ query Sheet($path: String!) {
     Water_Needs
     Bloom_Season
     Pruning_Needs
-    Image_URL
-    imageDownloaded
+    Img_URL
   }
 }
 </page-query>

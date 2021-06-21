@@ -18,7 +18,7 @@
               <div class="d-flex justify-space-between">
                 <v-avatar class="ma-3" size="194" tile>
                   <g-image
-                    src="~/assets/img/lomandra-hystrix-katie-belles.199.jpg"
+                    src="~/assets/img/27.jpg"
                     :alt="page.node.Scientific_Name"
                   ></g-image>
                  
@@ -32,13 +32,14 @@
                 >({{ page.node.Scientific_Name }})</v-card-subtitle
               >
               <v-card-text>
-                {{ page.node.Description }}<br />
+                Img_URL: {{ page.node.Img_URL }} <br>
+                {{ page.node.Description }}<br>
                 Located at: {{ page.node.Location }}-{{
                   page.node.id
-                }}
-                Image_URL: {{ page.node.Image_URL }}<br />
-                <g-link :to="page.node.Image_URL">Image_URL</g-link><br>
-                <img src="$page.node.imageDownloaded"/>
+                }}<br>
+                Img_URL: {{ page.node.Img_URL }}<br>
+                <g-link :to="page.node.Img_URL">Img_URL</g-link><br>
+                
               </v-card-text>
 
               <v-card-actions>

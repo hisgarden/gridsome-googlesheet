@@ -18,7 +18,7 @@ module.exports = {
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
             sheets: [
               {
-                sheetName: 'QL_Plants', // Example: "Sheet1"
+                sheetName: 'QL_Plants', // Example: "Sheet1" "QL_Plants"
                 collectionName: 'googleSheet', // Example: "Projects" (Must be unique)
               },
               //{
@@ -28,15 +28,6 @@ module.exports = {
             ],
           },
         ],
-      },
-    },
-    {
-      use: '@noxify/gridsome-plugin-remote-image',
-      options: {
-        typeName: 'googleSheet',
-        sourceField: 'Image_URL',
-        targetField: 'imageDownloaded',
-        targetPath: '/src/assets/remoteImages',
       },
     },
     {
@@ -55,7 +46,7 @@ module.exports = {
   templates: {
     googleSheet: [
       {
-        path: '/:id',
+        path: '/:ID',
         component: './src/templates/googleSheet.vue',
       },
     ],

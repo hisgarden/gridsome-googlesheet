@@ -22,9 +22,7 @@ query {
         Size_width
         Size_height
         Type
-        Image_URL
-        Img_Path
-        imageDownloaded
+        Img_URL
       }
     }
   }
