@@ -19,10 +19,11 @@ query {
         Exposure
         Pruning_Needs
         Location
-        Size_height
-        Size_width
+        Size__height_
+        Size__width_
         Type
         Img_URL
+        Attribution
       }
     }
   }

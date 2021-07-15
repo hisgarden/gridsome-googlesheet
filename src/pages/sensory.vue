@@ -10,7 +10,7 @@ query {
   allGoogleSheet (filter: { Location: { in: ["Sensory"] }}){
     edges {
       node {
-        id
+        ID
         Scientific_Name
         Common_Name
         Description
@@ -19,10 +19,11 @@ query {
         Exposure
         Pruning_Needs
         Location
-        Size_width
-        Size_height
+        Size__height_
+        Size__width_
         Type
         Img_URL
+        Attribution
       }
     }
   }

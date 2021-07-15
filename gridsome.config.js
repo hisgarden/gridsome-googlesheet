@@ -18,7 +18,7 @@ module.exports = {
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
             sheets: [
               {
-                sheetName: 'QL_Plants', // Example: "Sheet1" "QL_Plants"
+                sheetName: 'Sheet1', // Example: "Sheet1" "QL_Plants"
                 collectionName: 'googleSheet', // Example: "Projects" (Must be unique)
               },
               //{

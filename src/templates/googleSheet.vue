@@ -2,19 +2,19 @@
   <Layout>
     <section id="plant" class="plant-section">
       <v-container>
-        <g-image :src="$page.googleSheet.Img_URL" /> 
+        <g-image :src="$page.googleSheet.Img_URL" :alt="$page.googleSheet.Common_Name"/> 
           <h3>{{$page.googleSheet.Common_Name}}</h3>
           <div>Scientific Name - {{$page.googleSheet.Scientific_Name}}</div>
           <div>Description - {{$page.googleSheet.Description}}</div>
-          <div>Size(height) - {{$page.googleSheet.Size__height__}}</div>
+          <div>Size(height) - {{$page.googleSheet.Size__height_}}</div>
           <div>Size(width) - {{$page.googleSheet.Size__width_}}</div>
           <div>Bloom Season - {{$page.googleSheet.Bloom_Season}}</div>
           <div>Pruning Needs - {{$page.googleSheet.Pruning_Needs}}</div>
           <div>Water Needs - {{$page.googleSheet.Water_Needs}}</div>
           <div>Exposure - {{$page.googleSheet.Exposure}}</div>
           <div>Type - {{$page.googleSheet.Type}}</div>
-          <div>Location - {{$page.googleSheet.Location}}</div>
-          <div>ID Number - {{$page.googleSheet.ID}}</div>
+          <div>Location - {{$page.googleSheet.Location}}-{{$page.googleSheet.ID}}</div>
+          <div>Attribution - {{$page.googleSheet.Attribution}}</div>
           <div>Img URL - {{$page.googleSheet.Img_URL}}</div>
 <!--         <v-row>
           <v-col sm="6" class="d-flex flex-column justify-center">
@@ -48,8 +48,8 @@ query Sheet($path: String!) {
     Scientific_Name
     Common_Name
     Description
-    Size_height
-    Size_width
+    Size__height_
+    Size__width_
     Location
     Type
     Exposure
@@ -57,6 +57,7 @@ query Sheet($path: String!) {
     Bloom_Season
     Pruning_Needs
     Img_URL
+    Attribution
   }
 }
 </page-query>

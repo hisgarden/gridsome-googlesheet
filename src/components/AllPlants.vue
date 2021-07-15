@@ -17,8 +17,10 @@
             <v-card max-width="400" class="mx-auto" elevation="4" shaped>
               <div class="d-flex justify-space-between">
                 <v-avatar class="ma-3" size="194" tile>
+                          <!-- <g-image :src="page.node.Img_URL" />  -->
+
                   <g-image
-                    src="~/assets/img/27.jpg"
+                    src="~/assets/img/27.png"
                     :alt="page.node.Scientific_Name"
                   ></g-image>
                  
@@ -32,10 +34,9 @@
                 >({{ page.node.Scientific_Name }})</v-card-subtitle
               >
               <v-card-text>
-                Img_URL: {{ page.node.Img_URL }} <br>
                 {{ page.node.Description }}<br>
                 Located at: {{ page.node.Location }}-{{
-                  page.node.id
+                  page.node.ID
                 }}<br>
                 Img_URL: {{ page.node.Img_URL }}<br>
                 <g-link :to="page.node.Img_URL">Img_URL</g-link><br>
@@ -45,7 +46,7 @@
               <v-card-actions>
                 <v-btn text color="success" outlined>
                   <v-icon>mdi-magnify</v-icon>
-                  <g-link :to="page.node.id">Learn more</g-link>
+                  <g-link :to="page.node.ID">More Info</g-link>
                 </v-btn>
                 <v-spacer></v-spacer>
 
