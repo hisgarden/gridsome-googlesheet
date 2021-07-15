@@ -7,7 +7,7 @@
 <!-- Always put page-query between <template> and <script> -->
 <page-query>
 query {
-  allGoogleSheet (filter: { Location: { in: ["Mediterranean"] }}){
+  allGoogleSheet (filter: { Location: { in: ["mediterranean"] }}){
     edges {
       node {
         ID
