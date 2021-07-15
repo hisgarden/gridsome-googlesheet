@@ -1,8 +1,6 @@
 <template>
   <Layout>
     <AllPlants />
-
-
   </Layout>
 </template>
 
@@ -12,7 +10,7 @@ query {
   allGoogleSheet {
     edges {
       node {
-        id
+        ID
         Scientific_Name
         Common_Name
         Description
@@ -21,29 +19,31 @@ query {
         Exposure
         Pruning_Needs
         Location
-        Size_width
-        Size_height
+        Size__height_
+        Size__width_
         Type
+        Img_URL
+        Attribution
       }
     }
-  } 
+  }
 }
 </page-query>
 
 <script>
-import Plant from "@/components/Plant.vue"
+import Plant from '@/components/Plant.vue'
 import AllPlants from '@/components/AllPlants.vue'
 //import Card from "@/components/Card.vue"
 
 export default {
   metaInfo: {
-    title: 'Hello, UC Master Gardeners!'
+    title: 'Hello, UC Master Gardeners!',
   },
   components: {
     AllPlants,
-    Plant
+    Plant,
     //Card
-  }
+  },
 }
 </script>
 

@@ -6,20 +6,20 @@
 
 module.exports = {
   siteName: 'Quarry Lakes Demonstration Garden',
-  siteDescription: "Outstanding Plants of Alameda County",
+  siteDescription: 'Outstanding Plants of Alameda County',
   plugins: [
     {
       use: 'gridsome-source-google-sheets-v2',
       options: {
-        //sheetId: process.env.GOOGLE_SHEET_ID, //'GOOGLE_SHEET_ID', 
+        //sheetId: process.env.GOOGLE_SHEET_ID, //'GOOGLE_SHEET_ID',
         apiKey: process.env.GOOGLE_API_KEY, //'GOOGLE_API_KEY',
         spreadsheets: [
           {
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
             sheets: [
               {
-                sheetName: "QL_Plants", // Example: "Sheet1"
-                collectionName: "googleSheet", // Example: "Projects" (Must be unique)
+                sheetName: 'Sheet1', // Example: "Sheet1" "QL_Plants"
+                collectionName: 'googleSheet', // Example: "Projects" (Must be unique)
               },
               //{
               //  sheetName: 'Natives', // Example: "Sheet2"
@@ -31,29 +31,29 @@ module.exports = {
       },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        path: "articles/**/*.md",
-        typeName: "Article",
+        path: 'articles/**/*.md',
+        typeName: 'Article',
         resolveAbsolutePaths: true,
         remark: {
-          externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
-        }
-      }
-    }
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+        },
+      },
+    },
   ],
   templates: {
     googleSheet: [
       {
-        path: "/:id",
-        component:"./src/templates/googleSheet.vue"
-      }
-    ]
+        path: '/:ID',
+        component: './src/templates/googleSheet.vue',
+      },
+    ],
   },
   transformers: {
     remark: {
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+      plugins: ['@gridsome/remark-prismjs'],
+    },
+  },
 }
